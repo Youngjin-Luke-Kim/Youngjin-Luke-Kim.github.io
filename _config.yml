@@ -6,8 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Youngjin
 middle_name: Luke
 last_name: Kim
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   PhD student in Electrical and Computer Engineering at USC Viterbi School of Engineering. Research focus on 2.5D/3D IC design, power delivery networks, and machine learning for EDA.
 footer_text: >

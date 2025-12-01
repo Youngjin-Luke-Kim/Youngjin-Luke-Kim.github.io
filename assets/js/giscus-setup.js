@@ -18,7 +18,7 @@ function determineGiscusTheme() {
 
   let giscusAttributes = {
     src: "https://giscus.app/client.js",
-    "data-repo": "Youngjin-Luke-Kim/Youngjin-Luke-Kim.githhub.io",
+    "data-repo": "Youngjin-Luke-Kim/Youngjin-Luke-Kim.github.io",
     "data-repo-id": "",
     "data-category": "Comments",
     "data-category-id": "",

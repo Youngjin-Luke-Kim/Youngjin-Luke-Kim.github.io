@@ -28,10 +28,10 @@ latest_posts:
 I'm Youngjin Luke Kim (YJ), a PhD student in Electrical and Computer Engineering at USC Viterbi School of Engineering, advised by <a href="https://scholar.google.com/citations?user=kEh-m1sAAAAJ&hl=en" target="_blank">Professor Sungkyu Lim</a>. I expect to graduate in 2030.
 
 My research focuses on advanced packaging technologies and machine learning applications in electronic design automation (EDA), including:
+
 - **2.5D and 3D IC design and optimization**
 - **Power delivery networks (PDN)**
 - **Reinforcement learning for physical design optimization**
 - **Through Glass Via (TGV) and advanced packaging**
 
 Before joining USC, I received my Bachelor's degree from Yonsei University in Korea (2019-2025).
-

@@ -31,7 +31,7 @@ My research focuses on electronic design automation (EDA) for advanced integrate
 
 - **EDA for 2.5D and 3D IC design and optimization**
 - **Machine learning applications in EDA**
-- **System-level design and co-optimization**
+- **System-level design and co-optimization for 2.5D/3D IC design**
 - **New material and process integration for advanced packaging**
 
 Before joining USC, I received my Bachelor's degree from Yonsei University in Korea (2019-2025).

@@ -35,4 +35,3 @@ My research focuses on electronic design automation (EDA) for advanced integrate
 - **New material and process integration for advanced packaging**
 
 Before joining USC, I received my Bachelor's degree from Yonsei University in Korea (2019-2025).
-

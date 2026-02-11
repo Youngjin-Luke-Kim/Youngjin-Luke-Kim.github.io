@@ -55,7 +55,7 @@
       "endDate": "",
       "summary": "",
       "highlights": [
-        "Designed custom RISC-V processor architecture with reconfigurable computing array for matrix multiplication acceleration",
+        "Designed custom RISC-V processor architecture with reconfigurable computing array for matrix multiplication acceleration, including custom ISA extensions and assembly-level optimization",
         "Implemented hardware description in Chisel, focusing on architecture topology optimization and computational efficiency for ML workloads (OpenGeMM)"
       ]
     },

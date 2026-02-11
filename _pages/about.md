@@ -27,11 +27,10 @@ latest_posts:
 
 I'm Youngjin Luke Kim, a first-year Ph.D. student in Electrical and Computer Engineering at USC Viterbi School of Engineering, advised by <a href="https://scholar.google.com/citations?user=kEh-m1sAAAAJ&hl=en" target="_blank">Professor Sungkyu Lim</a>.
 
-My research focuses on electronic design automation (EDA) for advanced integrated circuits and machine learning applications, including:
+My research focuses on physical design and electronic design automation (EDA) for advanced packaging technologies, including:
 
-- **EDA for 2.5D and 3D IC design and optimization**
-- **Machine learning applications in EDA**
-- **System-level design and co-optimization for 2.5D/3D IC design**
-- **New material and process integration for advanced packaging**
+- Physical design and optimization for 2.5D/3D integrated circuits
+- Machine learning for EDA
+- GPU-accelerated EDA algorithms
 
 Before joining USC, I received my Bachelor's degree from Yonsei University in Korea.

@@ -32,7 +32,10 @@
       "startDate": "2025-01-01",
       "endDate": "",
       "summary": "Research on EDA for 2.5D/3D IC design and machine learning for EDA under Professor Sungkyu Lim",
-      "highlights": ["EDA for 2.5D/3D IC Design", "Machine Learning for EDA"]
+      "highlights": [
+        "EDA for 2.5D/3D IC Design",
+        "Machine Learning for EDA"
+      ]
     },
     {
       "name": "Samsung Memory Division",
@@ -42,8 +45,34 @@
       "endDate": "2024-08-01",
       "summary": "Signal Processing Task Group, Algorithm Part - AI Storage Solution for Near-Data Processing",
       "highlights": [
-        "Implemented FPGA-based IVF+PQ hardware IP with HLS, demonstrating 20x acceleration vs CPU",
-        "Modeled hardware accelerator for metadata filtering with prefetching mechanism"
+        "Designed and implemented hardware-accelerated vector search engine for AI storage, achieving 20× speedup over CPU baseline",
+        "Developed high-performance IVF+PQ algorithm pipeline on FPGA using C/C++-based HLS, optimizing memory access patterns and computational throughput",
+        "Architected prefetching mechanisms for metadata filtering, focusing on data pipeline efficiency and latency reduction"
+      ]
+    },
+    {
+      "name": "HAI Lab, Yonsei University",
+      "position": "Undergraduate Researcher",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        "Designed custom RISC-V processor architecture with reconfigurable computing array for matrix multiplication acceleration",
+        "Implemented hardware description in Chisel, focusing on architecture topology optimization and computational efficiency for ML workloads (OpenGeMM)"
+      ]
+    },
+    {
+      "name": "High-Speed Circuits Lab, Yonsei University",
+      "position": "Undergraduate Researcher",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        "Developed FPGA-based digital control algorithms for Silicon Micro Ring Modulators with real-time adaptive feedback",
+        "Built Python-based simulation framework for thermal crosstalk modeling and compensation in photonic systems",
+        "Implemented iterative optimization algorithms for multi-channel thermal interaction prediction"
       ]
     }
   ],
@@ -58,7 +87,11 @@
       "startDate": "2025-01-01",
       "endDate": "2030-01-01",
       "score": "",
-      "courses": ["2.5D/3D IC Design", "Power Delivery Networks", "Machine Learning for EDA"]
+      "courses": [
+        "2.5D/3D IC Design",
+        "Power Delivery Networks",
+        "Machine Learning for EDA"
+      ]
     },
     {
       "institution": "Yonsei University",
@@ -117,19 +150,33 @@
       "name": "Hardware Design",
       "level": "Advanced",
       "icon": "fa-solid fa-hashtag",
-      "keywords": ["Verilog", "Xilinx HLS", "Synopsys Tools (DC, Verdi, Hspice)", "Virtuoso Cadence", "Chisel"]
+      "keywords": [
+        "Verilog",
+        "Xilinx HLS",
+        "Synopsys Tools (DC, Verdi, Hspice)",
+        "Virtuoso Cadence",
+        "Chisel"
+      ]
     },
     {
       "name": "Programming",
       "level": "Advanced",
       "icon": "fa-solid fa-code",
-      "keywords": ["C/C++", "Python", "MATLAB"]
+      "keywords": [
+        "C/C++",
+        "Python",
+        "MATLAB"
+      ]
     },
     {
       "name": "Tools",
       "level": "Intermediate",
       "icon": "fa-solid fa-laptop-code",
-      "keywords": ["Linux", "Shell Script", "LaTeX"]
+      "keywords": [
+        "Linux",
+        "Shell Script",
+        "LaTeX"
+      ]
     }
   ],
   "languages": [
@@ -148,12 +195,21 @@
     {
       "name": "Computer Architecture",
       "icon": "fa-solid fa-microchip",
-      "keywords": ["2.5D and 3D IC Design", "Power Delivery Networks", "Near-Data Processing", "Hardware Acceleration"]
+      "keywords": [
+        "2.5D and 3D IC Design",
+        "Power Delivery Networks",
+        "Near-Data Processing",
+        "Hardware Acceleration"
+      ]
     },
     {
       "name": "Electronic Design Automation",
       "icon": "fa-solid fa-computer",
-      "keywords": ["ML for EDA Applications", "Reinforcement Learning for Physical Design", "Advanced Packaging"]
+      "keywords": [
+        "ML for EDA Applications",
+        "Reinforcement Learning for Physical Design",
+        "Advanced Packaging"
+      ]
     }
   ],
   "references": [],

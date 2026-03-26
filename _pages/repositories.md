@@ -51,6 +51,26 @@ nav_order: 4
   <div class="p-3">
     <div class="row">
       <div class="col-sm-2">
+        <img src="/assets/img/KS_LOGO.png" class="img-fluid" alt="Keysight Technologies">
+      </div>
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">PhD Intern, Machine Learning Architecture Systems</h5>
+        <h6 class="font-italic">Keysight Technologies, Calabasas, CA</h6>
+        <h6 class="font-italic text-muted">Summer 2026</h6>
+        <ul>
+          <li>Designed and implemented algorithms for autonomous neural architecture creation and model expansion using C++, CUDA, and libtorch</li>
+          <li>Developed meta-learning systems for automatic model scaling and connectivity optimization across GNN, FNO, and Transformer architectures</li>
+          <li>Built frameworks for autonomous model discovery, enabling neural networks to self-optimize topology based on real-time training feedback</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-2">
         <img src="/assets/img/usc_logo.png" class="img-fluid" alt="USC">
       </div>
       <div class="col-sm-10">

@@ -58,9 +58,9 @@ nav_order: 4
         <h6 class="font-italic">Keysight Technologies, Calabasas, CA</h6>
         <h6 class="font-italic text-muted">Summer 2026</h6>
         <ul>
-          <li>Designed and implemented algorithms for autonomous neural architecture creation and model expansion using C++, CUDA, and libtorch</li>
-          <li>Developed meta-learning systems for automatic model scaling and connectivity optimization across GNN, FNO, and Transformer architectures</li>
-          <li>Built frameworks for autonomous model discovery, enabling neural networks to self-optimize topology based on real-time training feedback</li>
+          <li>Design and implement algorithms for autonomous neural architecture creation and model expansion using C++, CUDA, and libtorch</li>
+          <li>Develop meta-learning systems for automatic model scaling and connectivity optimization across GNN, FNO, and Transformer architectures</li>
+          <li>Build frameworks for autonomous model discovery, enabling neural networks to self-optimize topology based on real-time training feedback</li>
         </ul>
       </div>
     </div>

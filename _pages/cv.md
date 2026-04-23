@@ -4,6 +4,6 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_pdf: CV_Youngjin_Kim.pdf
+cv_pdf: Resume_YJ_Kim.pdf
 description:
 ---

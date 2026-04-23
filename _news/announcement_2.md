@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Embarked on new journey at SCCAD under Prof. Sungkyu Lim
+Embarked on new journey at <a href="https://sites.usc.edu/sccad/">SCCAD</a>, USC under Prof. Sungkyu Lim

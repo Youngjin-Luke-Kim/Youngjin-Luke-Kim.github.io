@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined Samsung Memory Division as an intern
+Joined Samsung Memory Division (Controller Development, Signal Processing Task Group) as an intern

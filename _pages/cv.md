@@ -5,5 +5,5 @@ title: CV
 nav: true
 nav_order: 5
 cv_pdf: CV_Youngjin_Kim.pdf
-description: This is a description of your CV.
+description:
 ---

@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Youngjin Luke Kim",
+    "name": "Youngjin (Luke) Kim",
     "label": "PhD Student",
     "image": "",
     "email": "ykim9554@usc.edu",
@@ -25,6 +25,18 @@
     ]
   },
   "work": [
+    {
+      "name": "Keysight Technologies",
+      "position": "PhD Intern, Machine Learning Architecture Systems",
+      "url": "https://www.keysight.com/",
+      "startDate": "2026-05-01",
+      "endDate": "2026-08-01",
+      "summary": "Supervisor: Dr. Fabio Alessio Marino, Calabasas, CA (Incoming)",
+      "highlights": [
+        "Developing autonomous neural architecture generation and meta-learning frameworks in C++/CUDA and libtorch, targeting operator-learning model families (GNNs, GNOs, FNOs, and Transformer variants) for signal integrity applications",
+        "Prototyping architecture controllers that adapt model topology, receptive fields, and operator depth based on real-time learning feedback for resolution-invariant signal integrity ML architectures"
+      ]
+    },
     {
       "name": "University of Southern California (USC)",
       "position": "Graduate Research Assistant",
@@ -111,7 +123,7 @@
       "date": "2023-09-01",
       "awarder": "Samsung Display & LG Display",
       "url": "",
-      "summary": "$300 per semester and $300 monthly stipend for two years"
+      "summary": "\\$300 per semester and \\$300 monthly stipend for two years"
     },
     {
       "title": "Merit-based Scholarship",
@@ -129,13 +141,6 @@
       "releaseDate": "2024-07-01",
       "url": "",
       "summary": "Oral presentation at ICC Jeju, Korea. Co-authors: Kim, Y.-J, Ji, Y.-J., & Choi, W.-Y."
-    },
-    {
-      "name": "Dimension-Adaptive Reconfigurable Computing Array for Efficient GeMM Acceleration",
-      "publisher": "In Progress",
-      "releaseDate": "2025-01-01",
-      "url": "",
-      "summary": "Co-authors: Kim, Y.-J, & Chung, J."
     }
   ],
   "skills": [

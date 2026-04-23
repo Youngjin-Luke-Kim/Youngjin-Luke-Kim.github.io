@@ -143,50 +143,9 @@
       "summary": "Oral presentation at ICC Jeju, Korea. Co-authors: Kim, Y.-J, Ji, Y.-J., & Choi, W.-Y."
     }
   ],
-  "skills": [
-    {
-      "name": "Hardware Design",
-      "level": "Advanced",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": ["Verilog", "Xilinx HLS", "Synopsys Tools (DC, Verdi, Hspice)", "Virtuoso Cadence", "Chisel"]
-    },
-    {
-      "name": "Programming",
-      "level": "Advanced",
-      "icon": "fa-solid fa-code",
-      "keywords": ["C/C++", "Python", "MATLAB"]
-    },
-    {
-      "name": "Tools",
-      "level": "Intermediate",
-      "icon": "fa-solid fa-laptop-code",
-      "keywords": ["Linux", "Shell Script", "LaTeX"]
-    }
-  ],
-  "languages": [
-    {
-      "language": "Korean",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent (TOEFL 102)",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Computer Architecture",
-      "icon": "fa-solid fa-microchip",
-      "keywords": ["2.5D and 3D IC Design", "Power Delivery Networks", "Near-Data Processing", "Hardware Acceleration"]
-    },
-    {
-      "name": "Electronic Design Automation",
-      "icon": "fa-solid fa-computer",
-      "keywords": ["ML for EDA Applications", "Reinforcement Learning for Physical Design", "Advanced Packaging"]
-    }
-  ],
+  "skills": [],
+  "languages": [],
+  "interests": [],
   "references": [],
   "projects": []
 }

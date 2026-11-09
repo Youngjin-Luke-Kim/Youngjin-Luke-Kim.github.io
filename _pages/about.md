@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I'm Youngjin (Luke) Kim, a second-year Ph.D. student in Electrical and Computer Engineering at USC Viterbi School of Engineering, advised by <a href="https://scholar.google.com/citations?user=kEh-m1sAAAAJ&hl=en" target="_blank">Professor Sungkyu Lim</a>. This year I am also a PhD Intern at Keysight Technologies (Software and AI Labs).
+Hi, I'm Youngjin (Luke) Kim, a second-year Ph.D. student in Electrical and Computer Engineering at USC Viterbi School of Engineering, advised by <a href="https://scholar.google.com/citations?user=kEh-m1sAAAAJ&hl=en" target="_blank">Professor Sungkyu Lim</a>, and a PhD intern at Keysight Technologies.
 
 My research focuses on EDA for advanced packaging, with an emphasis on heterogeneous integration (2.5D/3D ICs), including:
 

@@ -11,23 +11,61 @@
   contents:
     - title: Electronic Design Automation
       items:
-        - EDA for 2.5D and 3D IC Design and Optimization
-        - Machine Learning for EDA Applications
-        - System-level Design and Co-optimization
-    - title: Advanced Packaging
-      items:
-        - New Material and Process Integration
-        - Through Glass Via (TGV)
+        - EDA for 2.5D and 3D IC Design and Optimization (Heterogeneous Integration)
+        - Signal and Power Integrity
+        - GPU-Accelerated EDA Algorithms
+        - ML-Driven Design Automation
 
 - title: Education
   type: time_table
   contents:
     - title: Ph.D. in Electrical and Computer Engineering
       institution: University of Southern California (USC), Los Angeles, CA
-      year: 2025 - Present
+      year: Aug 2025 - Present
       description:
         - Advisor: Professor Sungkyu Lim
-        - Research Focus: EDA for 2.5D/3D IC Design, ML for EDA
-    - title: Bachelor of Science
-      institution: Yonsei University, South Korea
-      year: 2019 - 2025
+        - "Selected Coursework: Hardware Foundations of ML, CAD of Digital Systems, Optimization for Information and Data Sciences"
+    - title: B.S. in Electrical and Electronic Engineering
+      institution: Yonsei University, Seoul, South Korea
+      year: Mar 2019 - Aug 2025
+      description:
+        - "GPA: 3.83/4.0 (Major: 3.92/4.0)"
+
+- title: Work Experience
+  type: time_table
+  contents:
+    - title: PhD Intern, Machine Learning Architecture Systems
+      institution: Keysight Technologies, SAL (Software and AI Labs), Calabasas, CA
+      year: May 2026 - Dec 2026
+      description:
+        - Developed and shipped ML models (variants of GNNs, DeepONet, and Transformers) in Keysight AI-Driven Designer, using C++/CUDA and libtorch to predict S-parameters within 0.6% error.
+        - Optimized ML training and inference in Keysight's RL-based optimizer by automatically tuning batch sizes on shared GPUs, increasing GPU memory utilization by 20%.
+    - title: Graduate Research Assistant
+      institution: University of Southern California, SCCAD Lab, Los Angeles, CA
+      year: Aug 2025 - Present
+      description:
+        - Built OpenEYE, a differentiable framework for signal integrity optimization in 2.5D IC interconnects, using custom CUDA kernels, achieving 37x faster forward analysis than a commercial tool.
+        - Building DiSCO, a framework for signal and power integrity co-optimization in 2.5D IC interconnects, optimizing chiplet PHY settings (TX/RX equalizers, drivers) under crosstalk and shared-PDN coupling.
+        - Developing MosaicGR, a heterogeneous CPU-GPU routing engine with CPU-guided adaptive scheduling.
+    - title: Intern, Controller Development
+      institution: Samsung Memory Division, Signal Processing Task Group, Hwaseong, South Korea
+      year: Sep 2024 - Jan 2025
+      description:
+        - Designed a hardware-accelerated vector search engine for AI datacenter SSD controllers, achieving 20x speedup over a CPU baseline across 1B+ data points.
+        - Developed an IVF+PQ pipeline on FPGA using C/C++-based HLS, optimizing memory access and computational throughput with metadata-filtering prefetch mechanisms.
+    - title: Undergraduate Research Assistant
+      institution: Yonsei University, HAI Lab and HSCS Lab, Seoul, South Korea
+      year: Aug 2023 - Aug 2025
+      description:
+        - Designed a RISC-V processor and a Chisel-based reconfigurable computing array for OpenGeMM acceleration.
+        - Developed FPGA-based digital control systems and thermal crosstalk cancellation algorithms for a Silicon Micro Ring Modulator-based optical neural network.
+
+- title: Skills
+  type: map
+  contents:
+    - name: Programming and HDL
+      value: C/C++ (libtorch, CUDA, HLS), Python (PyTorch), Verilog, Chisel, MATLAB, Shell Script, Tcl
+    - name: EDA Tools
+      value: Keysight (ADS), Synopsys (DC, PrimeTime, HSPICE), Cadence (Innovus, Virtuoso, Integrity 3D-IC, Voltus, Allegro, APD+, Sigrity, Clarity), Siemens (HyperLynx, Xpedition), Ansys (HFSS)
+    - name: Tools
+      value: Git, Linux, Docker, LaTeX

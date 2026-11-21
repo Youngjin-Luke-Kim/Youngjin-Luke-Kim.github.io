@@ -1,0 +1,186 @@
+<div id="research-projects">
+  <section class="intro" aria-labelledby="packaging-headline">
+    <h1 id="packaging-headline">Fast-forwarding advanced packaging.</h1>
+    <p class="mission">Here, we’re frontiering a faster design loop for 2.5D and 3D systems.</p>
+    <p class="domains">Signal Processing<span>·</span>Power Integrity<span>·</span>Optimization</p>
+  </section>
+
+  <section class="equation" aria-label="Two ways to reduce evaluation time">
+    <p>Total evaluation time <span>≈</span></p>
+    <div class="factors">
+      <div><h2>Time per evaluation</h2><p>ML prediction</p></div>
+      <span aria-hidden="true">×</span>
+      <div><h2>Number of evaluations</h2><p>Physics-guided search</p></div>
+    </div>
+  </section>
+
+  <section class="research" id="packaging-tree" aria-labelledby="packaging-question">
+    <h2 id="packaging-question">How can we design and validate advanced packages faster?</h2>
+    <div class="growth">
+      <figure class="growth-frame">
+        <div class="canopy">
+          <canvas aria-hidden="true"></canvas>
+          <ul class="branches" aria-label="Research branches">
+            <li class="branch branch-design">
+              <h3>Better designs?</h3>
+              <ul class="leaves">
+                <li><button type="button" data-proj="openeye">OpenEYE</button></li>
+                <li><button type="button" data-proj="disco">DiSCO</button></li>
+                <li><button type="button" data-proj="decap">BlockCAP</button></li>
+              </ul>
+            </li>
+            <li class="branch branch-validation">
+              <h3>Where could it fail?</h3>
+              <ul class="leaves">
+                <li><button type="button" data-proj="patterns">GPU-Bit</button></li>
+                <li><button type="button" data-proj="drift">DRIFT</button></li>
+              </ul>
+            </li>
+            <li class="branch branch-workflow">
+              <h3>Keysight Projects</h3>
+              <ul class="leaves">
+                <li><button type="button" data-proj="ml">ML Prediction</button></li>
+                <li><button type="button" data-proj="agents">LLM Agents</button></li>
+              </ul>
+            </li>
+            <li class="branch branch-compute">
+              <h3>Where should compute go?</h3>
+              <ul class="leaves">
+                <li><button type="button" data-proj="mosaic">MosaicGR</button></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <button class="replay" type="button" hidden>Replay growth</button>
+      </figure>
+    </div>
+    <section class="answer" id="packaging-answer" aria-live="polite" aria-atomic="true" hidden>
+      <h3></h3><p></p><a class="answer-chapter" href="#research-openeye">See the research</a>
+    </section>
+  </section>
+  <section class="research-story" aria-labelledby="packaging-design-loop">
+    <h2 id="packaging-design-loop">From black-box search to white-box optimization.</h2>
+    <p class="story-lead">We started with a simple question. Can a simulation tell us which design change to make next?</p>
+    <h3 class="story-topic">Signal and Power Integrity in 2.5D and 3D ICs</h3>
+
+    <div class="story-chapters">
+      <article class="story-chapter" id="research-openeye">
+        <div class="chapter-copy">
+          <h3>OpenEYE</h3>
+          <p class="chapter-question">Can a link model tell us how to change the wiring?</p>
+          <ul><li><strong>Gap.</strong> A simulator could score a layout, but choosing the next layout still took a search.</li><li><strong>Approach.</strong> We differentiated the path from wiring geometry to the receiver’s eye diagram so gradients could guide the layout.</li></ul>
+          <a href="https://doi.org/10.1145/3831252.3848501">Read the ICCAD paper</a>
+        </div>
+        <figure class="chapter-figure">
+          <img src="{{ '/assets/img/research-projects/openeye.webp' | relative_url }}" width="1319" height="417" loading="lazy" alt="A differentiable chain from interconnect geometry to a statistical eye and a gradient back to trace widths.">
+          <figcaption>OpenEYE, Fig. 1 · From interconnect geometry to the eye diagram.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-chapter" id="research-ml">
+        <div class="chapter-copy">
+          <p class="chapter-bridge">Some evaluations still run through an expensive black box.</p>
+          <h3>Keysight · ML Prediction</h3>
+          <p class="chapter-question">Can we make those evaluations faster?</p>
+          <ul><li><strong>Gap.</strong> Repeated electromagnetic solves slow down candidate exploration.</li><li><strong>Approach.</strong> I built ML predictors for electrical responses such as S-parameters so the optimizer can score candidates sooner.</li></ul>
+        </div>
+        <figure class="chapter-figure">
+          <ol class="method-diagram" aria-label="Design inputs flow through a learned predictor to estimated S-parameters">
+            <li>Design inputs</li><li>Learned predictor</li><li>S-parameters</li>
+          </ol>
+          <figcaption>Schematic of the prediction step in design exploration.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-chapter" id="research-disco">
+        <div class="chapter-copy">
+          <p class="chapter-bridge">A faster score still leaves the question of what to change together.</p>
+          <h3>DiSCO</h3>
+          <p class="chapter-question">Can we optimize signal and power together?</p>
+          <ul><li><strong>Gap.</strong> Tuning signal and power separately can miss how changes in one affect the other.</li><li><strong>Approach.</strong> We brought supply-induced jitter into the eye model and tuned equalizers and drivers against the same margin.</li></ul>
+        </div>
+        <figure class="chapter-figure">
+          <img src="{{ '/assets/img/research-projects/disco.webp' | relative_url }}" width="1342" height="331" loading="lazy" alt="DiSCO links transmitter and receiver settings, a coupled signal-power model, and the eye-mask objective.">
+          <figcaption>DiSCO draft, Fig. 2 · Joint signal and power optimization against the eye.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-chapter" id="research-decap">
+        <div class="chapter-copy">
+          <p class="chapter-bridge">Once the eye included power, it could guide choices inside the power network.</p>
+          <h3>BlockCAP</h3>
+          <p class="chapter-question">Which capacitor actually improves the link?</p>
+          <ul><li><strong>Gap.</strong> A better impedance profile can still leave the receiver with little extra margin.</li><li><strong>Approach.</strong> We differentiate through capacitor selection to the eye, then independently re-evaluate the selected discrete design.</li></ul>
+        </div>
+        <figure class="chapter-figure">
+          <div class="result-diagram" role="group" aria-label="Worst-lane eye width rises from 0.486 to 0.741 UI with the selected capacitor">
+            <p>Worst-lane eye width</p>
+            <div><span>No decap</span><i style="--bar:48.6%" aria-hidden="true"></i><b>0.486 UI</b></div>
+            <div><span>Selected decap</span><i style="--bar:74.1%" aria-hidden="true"></i><b>0.741 UI</b></div>
+          </div>
+          <figcaption>Research result · Eight-lane UCIe-A benchmark at 48 Gb/s.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-chapter" id="research-patterns">
+        <div class="chapter-copy">
+          <p class="chapter-bridge">After opening the eye through design, we turned the search around.</p>
+          <h3>GPU-Bit</h3>
+          <p class="chapter-question">What input would close the eye?</p>
+          <ul><li><strong>Gap.</strong> A pattern found with a linear channel model can miss stress caused by supply-dependent timing.</li><li><strong>Approach.</strong> We search with the coupled model and replay the resulting bit sequence in transient simulation.</li></ul>
+        </div>
+        <figure class="chapter-figure">
+          <div class="result-diagram" role="group" aria-label="In ADS replay, the linear stress pattern measured 54.7 millivolts of eye height and the supply-aware pattern measured 28.4">
+            <p>Eye height in ADS replay</p>
+            <div><span>Linear pattern</span><i style="--bar:91.2%" aria-hidden="true"></i><b>54.7 mV</b></div>
+            <div><span>Supply-aware</span><i style="--bar:47.3%" aria-hidden="true"></i><b>28.4 mV</b></div>
+          </div>
+          <figcaption>Research result · One 48 GT/s test condition with background activity.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-chapter" id="research-drift">
+        <div class="chapter-copy">
+          <p class="chapter-bridge">In 3D ICs, a power-network edit can change what needs to be checked.</p>
+          <h3>DRIFT</h3>
+          <p class="chapter-question">Which moments do we need to simulate again?</p>
+          <ul><li><strong>Gap.</strong> Activity-based screening can miss the windows with the largest voltage drops.</li><li><strong>Approach.</strong> We are testing power-network-aware screening to decide which windows warrant an exact transient solve after a design change.</li></ul>
+        </div>
+        <figure class="chapter-figure">
+          <img src="{{ '/assets/img/research-projects/drift.webp' | relative_url }}" width="910" height="468" loading="lazy" alt="A benchmark plot showing how many windows power-based screening needs to capture the ten worst voltage-drop windows.">
+          <figcaption>DRIFT diagnostic · How many windows a power-only ranking must inspect to capture the worst ten.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-chapter" id="research-mosaic">
+        <div class="chapter-copy">
+          <p class="chapter-bridge">We brought the same question about where to spend compute to routing.</p>
+          <h3>MosaicGR</h3>
+          <p class="chapter-question">How should CPUs and GPUs share the work?</p>
+          <ul><li><strong>Gap.</strong> Routes proposed in parallel can compete for the same routing space.</li><li><strong>Approach.</strong> GPUs generate candidates, then CPUs score and accept them against the latest congestion state.</li></ul>
+        </div>
+        <figure class="chapter-figure">
+          <ol class="method-diagram" aria-label="Parallel GPU proposals go through a CPU check against live congestion before routes are accepted">
+            <li>GPU proposes</li><li>CPU re-scores</li><li>Routes update</li>
+          </ol>
+          <figcaption>Routing schematic · Parallel proposals, sequential acceptance.</figcaption>
+        </figure>
+      </article>
+
+      <article class="story-chapter" id="research-agents">
+        <div class="chapter-copy">
+          <p class="chapter-bridge">The next question brings us back to Keysight and the whole workflow.</p>
+          <h3>Keysight · LLM Agent Workflow</h3>
+          <p class="chapter-question">Can we coordinate the entire design loop?</p>
+          <ul><li><strong>Gap.</strong> Faster predictions still leave decisions about what to test, when to verify, and how to track the results.</li><li><strong>Next step.</strong> Explore an agent that coordinates evaluation, optimization, and validation and tracks decisions across the workflow.</li></ul>
+        </div>
+        <figure class="chapter-figure">
+          <ol class="method-diagram" aria-label="A proposed agent workflow coordinates evaluation, optimization and validation">
+            <li>Evaluate</li><li>Optimize</li><li>Validate</li>
+          </ol>
+          <figcaption>Proposed workflow · Track each decision and its evidence across the loop.</figcaption>
+        </figure>
+      </article>
+    </div>
+  </section>
+</div>

@@ -3,25 +3,17 @@
   if (!map) return;
 
   const svg = map.querySelector('.package-drawing');
-  const playback = map.querySelector('.package-playback');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const animatedDiagrams = new Map([[svg, false]]);
-  let pauseRequested = false;
 
   function syncPlayback() {
     for (const [drawing, inView] of animatedDiagrams) {
-      const paused = pauseRequested || reducedMotion.matches || !inView || document.hidden;
+      const paused = reducedMotion.matches || !inView || document.hidden;
       if (paused) drawing.pauseAnimations();
       else drawing.unpauseAnimations();
     }
-    playback.hidden = reducedMotion.matches;
-    playback.textContent = pauseRequested ? 'Play motion' : 'Pause motion';
   }
 
-  playback.addEventListener('click', () => {
-    pauseRequested = !pauseRequested;
-    syncPlayback();
-  });
   reducedMotion.addEventListener('change', syncPlayback);
   document.addEventListener('visibilitychange', syncPlayback);
   const observer = new IntersectionObserver(entries => {

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "OpenEYE: A Differentiable Framework for Signal Integrity Optimization in 2.5D IC Interconnects" was accepted at IEEE/ACM ICCAD 2026!
+My first-author paper "OpenEYE: A Differentiable Framework for Signal Integrity Optimization in 2.5D IC Interconnects" was accepted at IEEE/ACM ICCAD 2026!

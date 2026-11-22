@@ -284,24 +284,6 @@ html[data-theme="dark"] #research-projects {
 #research-projects .package-callouts a:is(:hover, :focus-visible, [aria-current="location"]) .part-hit {
   stroke: color-mix(in srgb, var(--p-signal) 25%, transparent);
 }
-#research-projects .package-caption {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: .5rem;
-  min-height: 44px;
-  font-size: .88rem;
-  color: var(--muted-ink);
-}
-#research-projects .package-playback {
-  padding: .35rem .2rem;
-  min-height: 44px;
-  background: transparent;
-  border: 0;
-  color: var(--ink);
-  text-decoration: underline;
-  text-underline-offset: .18em;
-}
 #research-projects .package-index {
   display: flex;
   flex-wrap: wrap;

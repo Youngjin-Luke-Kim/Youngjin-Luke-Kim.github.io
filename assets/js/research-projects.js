@@ -34,7 +34,7 @@
     openeye: { view: [488, 315, 254, 124], label: 'Parallel lanes on the silicon interposer' },
     ml: { view: [20, 25, 1160, 660], label: 'Predict a design response · Keysight ML' },
     disco: { view: [375, 350, 203, 99], label: 'Microbump land field at the GPU I/O edge' },
-    decap: { view: [240, 359, 179, 87], label: 'Decoupling capacitor · Enlarged cross-section' },
+    decap: { view: [240, 359, 179, 87], label: 'Decoupling capacitor' },
     patterns: { view: [484, 325, 256, 125], label: 'GPU to HBM · Forward and return traffic' },
     drift: { view: [388, 244, 206, 101], label: 'Power straps on orthogonal metal layers, connected by vias' },
     mosaic: { view: [265, 251, 181, 89], label: 'Planar metal routes on the GPU die' },

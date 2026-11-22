@@ -47,6 +47,8 @@ html[data-theme="dark"] #research-projects {
   font-family: var(--display);
   font-size: clamp(2.5rem, 7.6vw, 5.6rem); font-weight: 600; line-height: .97; letter-spacing: -.03em;
 }
+#research-projects .design-question { margin: 1.4rem auto .5rem; font: 600 clamp(1.2rem, 2.5vw, 1.65rem)/1.25 var(--display); }
+#research-projects .intro .design-question + .mission { margin-top: .5rem; }
 #research-projects .mission {
   max-width: 43ch; margin: 1.35rem auto 0; font-size: clamp(1.05rem, 2vw, 1.3rem);
   line-height: 1.4; text-wrap: balance;
@@ -284,7 +286,7 @@ html[data-theme="dark"] #research-projects {
 }
 #research-projects .package-caption {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   gap: .5rem;
   min-height: 44px;

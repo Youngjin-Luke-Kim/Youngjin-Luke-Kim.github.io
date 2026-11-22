@@ -208,14 +208,14 @@
         <div class="chapter-copy">
           <p class="chapter-bridge">The next question brings us back to Keysight and the whole workflow.</p>
           <h3>Keysight · Agentic Workflow</h3>
-          <p class="chapter-question">Can we coordinate the entire design loop?</p>
-          <ul><li><strong>Gap.</strong> Faster predictions still leave decisions about what to test, when to verify, and how to track the results.</li><li><strong>Next step.</strong> Explore how an LLM agent could use each result to choose the next evaluation and track the evidence behind that choice.</li></ul>
+          <p class="chapter-question">Can an agent turn a design question into a workflow engineers can test?</p>
+          <ul><li><strong>Gap.</strong> A predictor can score a candidate. For each new problem, engineers still have to prepare the data, choose a model, and set up the optimization.</li><li><strong>Next step.</strong> Build an LLM agent that proposes a setup engineers can inspect, revise, and rerun. Compare its results with an expert setup under the same compute budget.</li></ul>
         </div>
         <figure class="chapter-figure">
-          <ol class="method-diagram" aria-label="A proposed agentic workflow coordinates evaluation, optimization and validation">
-            <li>Evaluate</li><li>Optimize</li><li>Validate</li>
+          <ol class="method-diagram" aria-label="The agent proposes a setup, an engineer reviews it, and the workflow is benchmarked">
+            <li>Propose a setup</li><li>Review and run</li><li>Benchmark</li>
           </ol>
-          <figcaption>Track each decision and the evidence behind it.</figcaption>
+          <figcaption>Compare task completion and model quality against an expert baseline.</figcaption>
         </figure>
       </article>
     </div>

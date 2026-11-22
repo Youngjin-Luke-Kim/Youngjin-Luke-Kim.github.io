@@ -122,6 +122,7 @@ html[data-theme="dark"] #research-projects {
 #research-projects .answer p { margin: .5rem 0; color: var(--muted-light); }
 #research-projects .research-story { max-width: 67rem; margin-inline: auto; padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
 #research-projects .research-story h2 { font: 600 clamp(2.5rem, 6vw, 4.65rem)/1 var(--display); letter-spacing: -.028em; text-wrap: balance; }
+#research-projects .story-prelude { margin-bottom: .65rem; color: var(--muted-ink); font: italic 1.15rem/1.4 var(--display); }
 #research-projects .story-lead { max-width: 60ch; margin-top: 1.15rem; font-size: clamp(1.1rem, 2vw, 1.3rem); line-height: 1.54; color: var(--muted-ink); }
 #research-projects .story-topic { margin-top: 2rem; font: 600 clamp(1.35rem, 3vw, 2rem)/1.12 var(--display); }
 #research-projects .story-chapters { display: grid; gap: clamp(3.35rem, 8vw, 7rem); margin-top: 1.35rem; }
@@ -170,4 +171,213 @@ html[data-theme="dark"] #research-projects {
 @media (max-width: 360px) {
   #research-projects .branches { grid-template-columns: 48% minmax(0, 1fr) 47%; }
   #research-projects .branch > .leaves { gap: .25rem; }
+}
+
+#research-projects {
+  --p-board: #e3e7e8;
+  --p-mat: #f6f8f8;
+  --p-edge: #6e7e85;
+  --p-metal: #81949b;
+  --p-die: #eaf0f1;
+  --p-die-top: #f8fbfc;
+  --p-die-side: #cad5d8;
+  --p-interposer: #d6e4e6;
+  --p-signal: #007979;
+  --p-pulse: #00736b;
+  --p-power: #93614a;
+}
+
+html[data-theme="dark"] #research-projects {
+  --p-board: #313a3e;
+  --p-mat: #22292c;
+  --p-edge: #8b9da3;
+  --p-metal: #72888f;
+  --p-die: #344249;
+  --p-die-top: #46565f;
+  --p-die-side: #2a3439;
+  --p-interposer: #35494d;
+  --p-signal: #69d3ca;
+  --p-pulse: #befff6;
+  --p-power: #d1a187;
+}
+
+#research-projects .intro:has(+ .package-research) { padding-bottom: clamp(1rem, 2vw, 1.5rem); }
+#research-projects #package-map { padding-top: 1rem; padding-inline: 0; background: transparent; scroll-margin-top: 3.75rem; }
+#research-projects .package-intro {
+  max-width: 58ch;
+  margin: .9rem auto 1.4rem;
+  padding-inline: .5rem;
+  text-align: center;
+  color: var(--muted-ink);
+}
+#research-projects .package-figure { margin: 0; }
+#research-projects .package-drawing, #research-projects .package-zoom svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--p-mat);
+}
+#research-projects .package-drawing { border-block: 1px solid var(--rule); }
+:is(.pm-substrate-side, .pm-substrate-top, .pm-substrate-front, .pm-die-side, .pm-die-top, .pm-die-front,
+  .pm-interposer-side, .pm-interposer-top, .pm-interposer-front) {
+  stroke: var(--p-edge);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+}
+:is(.pm-substrate-front, .pm-substrate-top, .pm-interposer-side) { fill: var(--p-board); }
+:is(.pm-substrate-side, .pm-interposer-front, .pm-die-side) { fill: var(--p-die-side); }
+.pm-interposer-top { fill: var(--p-interposer); }
+.pm-die-front { fill: var(--p-die); }
+.pm-die-top { fill: var(--p-die-top); }
+:is(.pm-substrate-seam, .pm-substrate-hatch, .pm-interposer-metal, .pm-die-striation, .pm-bump-row, .pm-die-routing) {
+  fill: none;
+  stroke: var(--p-metal);
+  stroke-width: 1.15;
+}
+.pm-substrate-hatch { opacity: .28; }
+.pm-bump-row { stroke-width: 4; stroke-linecap: round; }
+.pm-bump-rail { stroke-width: 1; opacity: .55; }
+.pm-die-routing { stroke: var(--p-edge); stroke-width: 1.5; stroke-linecap: round; }
+.pm-routing-terminals { stroke-width: 4; }
+.pm-stack-label { font: 600 25px/1 var(--display); fill: var(--ink); }
+.pm-physical-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .075em;
+  fill: var(--ink);
+}
+.pm-phy-block { fill: var(--p-interposer); stroke: var(--p-edge); }
+:is(.pm-power-bus, .pm-power-contacts) { fill: none; stroke: var(--p-power); stroke-width: 3.4; }
+.pm-power-contacts { stroke-width: 2; opacity: .75; }
+.pm-capacitor { fill: var(--p-die-top); stroke: var(--p-power); stroke-width: 2.2; }
+.pm-signal-track { fill: none; stroke: var(--p-signal); stroke-width: 2.25; stroke-linejoin: round; }
+.pm-secondary-track { stroke-dasharray: 6 4; opacity: .75; }
+.pm-signal-arrow { fill: none; stroke: var(--p-signal); stroke-width: 1.2; }
+#research-projects .signal-packet { fill: var(--p-pulse); stroke: var(--p-die-top); stroke-width: 1.35; }
+#research-projects .signal-packet.returning { fill: var(--p-die-top); stroke: var(--p-pulse); stroke-width: 2; }
+:is(.pm-design-cycle, .pm-loop-arrow) {
+  fill: none;
+  stroke: var(--p-edge);
+  stroke-width: 1.35;
+}
+#research-projects .cycle-packet { fill: var(--p-edge); }
+.pm-interconnect-label-rule { stroke: var(--p-metal); stroke-width: 1; }
+
+#research-projects .package-callouts a { cursor: pointer; outline: none; }
+#research-projects .package-callouts rect { fill: var(--paper); stroke: var(--p-edge); stroke-width: 1; }
+#research-projects .package-callouts text {
+  fill: var(--ink);
+  text-anchor: middle;
+  font-size: 14px;
+  font-weight: 600;
+  pointer-events: none;
+}
+#research-projects .package-callouts .callout-leader { fill: none; stroke: var(--p-edge); stroke-width: 1.1; }
+#research-projects .package-callouts circle { fill: var(--p-edge); }
+#research-projects .package-callouts .part-hit { fill: none; stroke: transparent; stroke-width: 19; }
+#research-projects .package-callouts a:is(:hover, :focus-visible, [aria-current="location"]) rect {
+  stroke: var(--p-signal);
+  stroke-width: 2.2;
+}
+#research-projects .package-callouts a:is(:hover, :focus-visible, [aria-current="location"]) .part-hit {
+  stroke: color-mix(in srgb, var(--p-signal) 25%, transparent);
+}
+#research-projects .package-caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+  min-height: 44px;
+  font-size: .88rem;
+  color: var(--muted-ink);
+}
+#research-projects .package-playback {
+  padding: .35rem .2rem;
+  min-height: 44px;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: .18em;
+}
+#research-projects .package-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 .85rem;
+  border-bottom: 1px solid var(--rule);
+}
+#research-projects .package-index a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ink);
+  font-size: .92rem;
+}
+#research-projects .package-index a[aria-current="location"] { color: var(--global-theme-color); }
+#research-projects .package-index a:is(:focus-visible, [aria-current="location"]) { text-decoration: underline; }
+
+#research-projects .chapter-visuals {
+  display: grid;
+  gap: .65rem;
+  min-width: 0;
+}
+#research-projects .story-chapter:nth-child(even) .chapter-visuals { grid-area: 1 / 1; }
+#research-projects .package-zoom { margin: 0; border: 1px solid var(--rule); }
+#research-projects .package-zoom svg { aspect-ratio: 2.05; }
+#research-projects .package-zoom figcaption { padding: .45rem .65rem; color: var(--muted-ink); font-size: .82rem; }
+#research-projects .zoom-target {
+  fill: color-mix(in srgb, var(--p-signal) 15%, transparent);
+  stroke: var(--p-signal);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+#research-projects .story-chapter { scroll-margin-top: 5rem; }
+
+@media (max-width: 690px) {
+  #research-projects .package-callouts { display: none; }
+}
+@media (max-width: 619px) {
+  #research-projects .story-chapter:nth-child(even) .chapter-visuals { grid-area: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #research-projects .package-packets { visibility: hidden; }
+}
+
+#research-projects .package-drawing,
+#research-projects .package-zoom svg { background: #1a232d; }
+#research-projects .package-callouts text { fill: #f2f5f6; font: 600 16.5px/1 var(--body, sans-serif); }
+#research-projects .package-callouts rect { fill: #202a33; stroke: #647782; stroke-width: .7; }
+#research-projects .package-callouts .callout-leader { stroke: #b4c7cd; stroke-width: 1; }
+#research-projects .package-callouts circle { fill: #e3fcf9; stroke: #31494f; stroke-width: 1.2; }
+#research-projects .package-callouts a:is(:hover,:focus-visible) rect { stroke: #8fe6dc; fill: #31464b; }
+#research-projects .signal-packet { pointer-events: none; stroke: none; fill: none; }
+@media (prefers-reduced-motion: reduce) {
+  #research-projects .package-loop-motion { visibility: hidden; }
+}
+
+#research-projects .package-callouts :is([data-package-part="ml"], [data-package-part="agents"]) text {
+  font-size: 22px;
+}
+#research-projects .package-stage { position: relative; }
+#research-projects .compact-loop-labels { display: none; }
+@media (max-width: 690px) {
+  #research-projects .compact-loop-labels { display: block; }
+  #research-projects .compact-loop-labels a {
+    position: absolute;
+    display: grid;
+    align-items: center;
+    min-height: 44px;
+    padding-inline: .55rem;
+    font: 600 clamp(14px, 3vw, 17px)/1.15 var(--body, sans-serif);
+    color: #f3fbfa;
+    background: #1a232d;
+    white-space: nowrap;
+  }
+  #research-projects .compact-loop-labels a:first-child {
+    top: 6.52%; left: 50%; transform: translate(-50%, -50%);
+  }
+  #research-projects .compact-loop-labels a:last-child {
+    bottom: 6.67%; left: 50%; transform: translate(-50%, 50%);
+  }
+  #research-projects .package-index a { font-size: 1rem; }
 }

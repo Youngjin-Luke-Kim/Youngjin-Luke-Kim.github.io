@@ -1,66 +1,102 @@
 <div id="research-projects">
   <section class="intro" aria-labelledby="packaging-headline">
-    <h1 id="packaging-headline">Fast-forwarding advanced packaging.</h1>
-    <p class="mission">Here, we’re frontiering a faster design loop for 2.5D and 3D systems.</p>
-    <p class="domains">Signal Processing<span>·</span>Power Integrity<span>·</span>Optimization</p>
+    <h1 id="packaging-headline">How can we find a better design, faster?</h1>
+    <p class="mission">We accelerate simulation, predict electrical response, and use the results to guide the next design change in advanced packaging and physical design.</p>
   </section>
 
-  <section class="equation" aria-label="Two ways to reduce evaluation time">
-    <p>Total evaluation time <span>≈</span></p>
-    <div class="factors">
-      <div><h2>Time per evaluation</h2><p>ML prediction</p></div>
-      <span aria-hidden="true">×</span>
-      <div><h2>Number of evaluations</h2><p>Physics-guided search</p></div>
-    </div>
-  </section>
-
-  <section class="research" id="packaging-tree" aria-labelledby="packaging-question">
-    <h2 id="packaging-question">How can we design and validate advanced packages faster?</h2>
-    <div class="growth">
-      <figure class="growth-frame">
-        <div class="canopy">
-          <canvas aria-hidden="true"></canvas>
-          <ul class="branches" aria-label="Research branches">
-            <li class="branch branch-design">
-              <h3>Better designs?</h3>
-              <ul class="leaves">
-                <li><button type="button" data-proj="openeye">OpenEYE</button></li>
-                <li><button type="button" data-proj="disco">DiSCO</button></li>
-                <li><button type="button" data-proj="decap">BlockCAP</button></li>
-              </ul>
-            </li>
-            <li class="branch branch-validation">
-              <h3>Where could it fail?</h3>
-              <ul class="leaves">
-                <li><button type="button" data-proj="patterns">GPU-Bit</button></li>
-                <li><button type="button" data-proj="drift">DRIFT</button></li>
-              </ul>
-            </li>
-            <li class="branch branch-workflow">
-              <h3>Keysight Projects</h3>
-              <ul class="leaves">
-                <li><button type="button" data-proj="ml">ML Prediction</button></li>
-                <li><button type="button" data-proj="agents">LLM Agents</button></li>
-              </ul>
-            </li>
-            <li class="branch branch-compute">
-              <h3>Where should compute go?</h3>
-              <ul class="leaves">
-                <li><button type="button" data-proj="mosaic">MosaicGR</button></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <button class="replay" type="button" hidden>Replay growth</button>
-      </figure>
-    </div>
-    <section class="answer" id="packaging-answer" aria-live="polite" aria-atomic="true" hidden>
-      <h3></h3><p></p><a class="answer-chapter" href="#research-openeye">See the research</a>
-    </section>
-  </section>
+<section class="research package-research" id="package-map" aria-labelledby="package-map-heading">
+ <h2 id="package-map-heading">Inside an advanced package</h2>
+ <p class="package-intro">Follow a signal from GPU to HBM. Select a feature to explore my research behind it.</p>
+ <figure class="package-figure">
+ <div class="package-stage">
+ <svg class="package-drawing" viewBox="100 20 1000 675" role="group" aria-labelledby="package-drawing-title">
+ <title id="package-drawing-title">GPU and an eight-tier HBM stack on a shared silicon interposer. Select a package feature or a design workflow.</title>
+ <defs><g id="package-hardware">
+ <image href="{{ '/assets/img/research-projects/gpu-hbm.webp' | relative_url }}" width="1200" height="720"/>
+ <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+ <path id="ml-loop" d="M484 650H186Q117 650 117 581V133Q117 64 186 64H496" stroke="#86aeac" stroke-width="7"/>
+ <path id="agent-loop" d="M696 64H1014Q1083 64 1083 133V581Q1083 650 1014 650H719" stroke="#86aeac" stroke-width="7"/>
+ <path d="m485 55 13 9-13 9m222-18 13 9-13 9M733 641l-13 9 13 9m-250-18-13 9 13 9" stroke="#bddad7" stroke-width="4"/>
+ </g>
+ </g><path id="bus-2" d="M514.83 410.94 L530.64 412.67 L560.51 404.85 L713.20 421.50"/><path id="bus-6" d="M520.65 400.78 L548.47 403.82 L578.34 395.99 L719.02 411.34"/><path id="bus-11" d="M726.30 398.64 L600.63 384.93 L570.76 392.75 L527.93 388.08"/></defs>
+ <use href="#package-hardware"/>
+ <g class="package-packets"><g class="signal-packet"><animateMotion dur="1.65s" begin="-0.5s" repeatCount="indefinite" rotate="auto"><mpath href="#bus-2"/></animateMotion>
+ <path d="M-14 0H1" stroke="#4affed" stroke-opacity=".32" stroke-width="6" stroke-linecap="round"/>
+ <path d="M-8 0H1" stroke="#d9fffa" stroke-width="2.6" stroke-linecap="round"/></g><g class="signal-packet"><animateMotion dur="1.65s" begin="-1.3s" repeatCount="indefinite" rotate="auto"><mpath href="#bus-6"/></animateMotion>
+ <path d="M-14 0H1" stroke="#4affed" stroke-opacity=".32" stroke-width="6" stroke-linecap="round"/>
+ <path d="M-8 0H1" stroke="#d9fffa" stroke-width="2.6" stroke-linecap="round"/></g><g class="signal-packet"><animateMotion dur="1.65s" begin="-2s" repeatCount="indefinite" rotate="auto"><mpath href="#bus-11"/></animateMotion>
+ <path d="M-14 0H1" stroke="#4affed" stroke-opacity=".32" stroke-width="6" stroke-linecap="round"/>
+ <path d="M-8 0H1" stroke="#d9fffa" stroke-width="2.6" stroke-linecap="round"/></g></g>
+ <g class="package-loop-motion" aria-hidden="true" pointer-events="none" fill="#e4fffa">
+ <circle r="4"><animateMotion dur="8s" repeatCount="indefinite"><mpath href="#ml-loop"/></animateMotion></circle>
+ <circle r="4"><animateMotion dur="8s" repeatCount="indefinite"><mpath href="#agent-loop"/></animateMotion></circle>
+ </g>
+ <g class="package-callouts"><a href="#research-mosaic" data-package-part="mosaic" aria-label="On-die routing">
+ <path class="callout-leader" d="M250 147 L250 240 L360 332"/>
+ <circle cx="360" cy="332" r="3.2"/>
+ <rect x="180.07" y="118" width="139.86" height="32" rx="4"/>
+ <text x="250" y="139">On-die routing</text>
+ <path class="part-hit" d="M348 332h24"/>
+ </a><a href="#research-drift" data-package-part="drift" aria-label="Power mesh">
+ <path class="callout-leader" d="M474 168 L474 240 L493 311"/>
+ <circle cx="493" cy="311" r="3.2"/>
+ <rect x="413.69" y="139" width="120.62" height="32" rx="4"/>
+ <text x="474" y="160">Power mesh</text>
+ <path class="part-hit" d="M481 311h24"/>
+ </a><a href="#research-openeye" data-package-part="openeye" aria-label="Interconnect">
+ <path class="callout-leader" d="M684 136 L684 250 L645 365"/>
+ <circle cx="645" cy="365" r="3.2"/>
+ <rect x="624.06" y="107" width="119.88" height="32" rx="4"/>
+ <text x="684" y="128">Interconnect</text>
+ <path class="part-hit" d="M633 365h24"/>
+ </a><a href="#research-patterns" data-package-part="patterns" aria-label="Signal flow">
+ <path class="callout-leader" d="M738 563 L738 490 L620 418"/>
+ <circle cx="620" cy="418" r="3.2"/>
+ <rect x="682.5" y="564" width="111" height="32" rx="4"/>
+ <text x="738" y="585">Signal flow</text>
+ <path class="part-hit" d="M608 418h24"/>
+ </a><a href="#research-decap" data-package-part="decap" aria-label="Decoupling capacitor">
+ <path class="callout-leader" d="M277 531 L277 472 L329 412"/>
+ <circle cx="329" cy="412" r="3.2"/>
+ <rect x="145.95" y="532" width="196.1" height="32" rx="4"/>
+ <text x="244" y="553">Decoupling capacitor</text>
+ <path class="part-hit" d="M317 412h24"/>
+ </a><a href="#research-disco" data-package-part="disco" aria-label="TX bump map">
+ <path class="callout-leader" d="M482 553 L482 483 L487 413"/>
+ <circle cx="487" cy="413" r="3.2"/>
+ <rect x="416.88" y="554" width="130.24" height="32" rx="4"/>
+ <text x="482" y="575">TX bump map</text>
+ <path class="part-hit" d="M475 413h24"/>
+ </a><a href="#research-ml" data-package-part="ml" aria-label="ML prediction">
+ <rect x="508" y="42" width="181" height="44" rx="4"/>
+ <text x="598" y="72">ML prediction</text>
+ </a><a href="#research-agents" data-package-part="agents" aria-label="Agentic workflow">
+ <rect x="494" y="628" width="212" height="44" rx="4"/>
+ <text x="600" y="658">Agentic workflow</text>
+ </a></g>
+ </svg>
+ <div class="compact-loop-labels">
+   <a href="#research-ml" data-package-part="ml">ML prediction</a>
+   <a href="#research-agents" data-package-part="agents">Agentic workflow</a>
+ </div>
+ </div>
+ <figcaption class="package-caption"><span>GPU and HBM on a silicon interposer · Conceptual cutaway</span><button class="package-playback" type="button" hidden>Pause motion</button></figcaption>
+ </figure>
+  <nav class="package-index" aria-label="Research by package area">
+    <a href="#research-openeye" data-package-part="openeye">Interconnect</a>
+    <a href="#research-disco" data-package-part="disco">TX bump map</a>
+    <a href="#research-decap" data-package-part="decap">Decoupling capacitor</a>
+    <a href="#research-drift" data-package-part="drift">Power mesh</a>
+    <a href="#research-patterns" data-package-part="patterns">Signal flow</a>
+    <a href="#research-mosaic" data-package-part="mosaic">On-die routing</a>
+    <a href="#research-ml" data-package-part="ml">ML prediction</a>
+    <a href="#research-agents" data-package-part="agents">Agentic workflow</a>
+  </nav>
+</section>
   <section class="research-story" aria-labelledby="packaging-design-loop">
+    <p class="story-prelude">Illuminate the box.</p>
     <h2 id="packaging-design-loop">From black-box search to white-box optimization.</h2>
-    <p class="story-lead">We started with a simple question. Can a simulation tell us which design change to make next?</p>
+    <p class="story-lead">When we can differentiate the physics, one simulation tells us how a design change affects the result. When each simulation is a costly black box, a learned predictor helps us choose which candidates to test.</p>
     <h3 class="story-topic">Signal and Power Integrity in 2.5D and 3D ICs</h3>
 
     <div class="story-chapters">
@@ -73,7 +109,7 @@
         </div>
         <figure class="chapter-figure">
           <img src="{{ '/assets/img/research-projects/openeye.webp' | relative_url }}" width="1319" height="417" loading="lazy" alt="A differentiable chain from interconnect geometry to a statistical eye and a gradient back to trace widths.">
-          <figcaption>OpenEYE, Fig. 1 · From interconnect geometry to the eye diagram.</figcaption>
+          <figcaption>How trace geometry shapes the receiver’s eye.</figcaption>
         </figure>
       </article>
 
@@ -82,13 +118,13 @@
           <p class="chapter-bridge">Some evaluations still run through an expensive black box.</p>
           <h3>Keysight · ML Prediction</h3>
           <p class="chapter-question">Can we make those evaluations faster?</p>
-          <ul><li><strong>Gap.</strong> Repeated electromagnetic solves slow down candidate exploration.</li><li><strong>Approach.</strong> I built ML predictors for electrical responses such as S-parameters so the optimizer can score candidates sooner.</li></ul>
+          <ul><li><strong>Gap.</strong> Repeated electromagnetic solves slow down candidate exploration.</li><li><strong>Approach.</strong> Built ML predictors for electrical response. Predicted S-parameters can help an optimizer score candidates and select the next circuit to simulate.</li></ul>
         </div>
         <figure class="chapter-figure">
           <ol class="method-diagram" aria-label="Design inputs flow through a learned predictor to estimated S-parameters">
             <li>Design inputs</li><li>Learned predictor</li><li>S-parameters</li>
           </ol>
-          <figcaption>Schematic of the prediction step in design exploration.</figcaption>
+          <figcaption>Predict the electrical response of a candidate circuit.</figcaption>
         </figure>
       </article>
 
@@ -101,7 +137,7 @@
         </div>
         <figure class="chapter-figure">
           <img src="{{ '/assets/img/research-projects/disco.webp' | relative_url }}" width="1342" height="331" loading="lazy" alt="DiSCO links transmitter and receiver settings, a coupled signal-power model, and the eye-mask objective.">
-          <figcaption>DiSCO draft, Fig. 2 · Joint signal and power optimization against the eye.</figcaption>
+          <figcaption>Joint signal and power optimization for receiver eye margin.</figcaption>
         </figure>
       </article>
 
@@ -118,7 +154,7 @@
             <div><span>No decap</span><i style="--bar:48.6%" aria-hidden="true"></i><b>0.486 UI</b></div>
             <div><span>Selected decap</span><i style="--bar:74.1%" aria-hidden="true"></i><b>0.741 UI</b></div>
           </div>
-          <figcaption>Research result · Eight-lane UCIe-A benchmark at 48 Gb/s.</figcaption>
+          <figcaption>Eight-lane UCIe-A benchmark at 48 Gb/s.</figcaption>
         </figure>
       </article>
 
@@ -135,7 +171,7 @@
             <div><span>Linear pattern</span><i style="--bar:91.2%" aria-hidden="true"></i><b>54.7 mV</b></div>
             <div><span>Supply-aware</span><i style="--bar:47.3%" aria-hidden="true"></i><b>28.4 mV</b></div>
           </div>
-          <figcaption>Research result · One 48 GT/s test condition with background activity.</figcaption>
+          <figcaption>One 48 GT/s test condition with background activity.</figcaption>
         </figure>
       </article>
 
@@ -148,7 +184,7 @@
         </div>
         <figure class="chapter-figure">
           <img src="{{ '/assets/img/research-projects/drift.webp' | relative_url }}" width="910" height="468" loading="lazy" alt="A benchmark plot showing how many windows power-based screening needs to capture the ten worst voltage-drop windows.">
-          <figcaption>DRIFT diagnostic · How many windows a power-only ranking must inspect to capture the worst ten.</figcaption>
+          <figcaption>How many windows must a power-based ranking inspect to find the ten largest voltage drops?</figcaption>
         </figure>
       </article>
 
@@ -163,19 +199,19 @@
           <ol class="method-diagram" aria-label="Parallel GPU proposals go through a CPU check against live congestion before routes are accepted">
             <li>GPU proposes</li><li>CPU re-scores</li><li>Routes update</li>
           </ol>
-          <figcaption>Routing schematic · Parallel proposals, sequential acceptance.</figcaption>
+          <figcaption>Parallel proposals, sequential acceptance.</figcaption>
         </figure>
       </article>
 
       <article class="story-chapter" id="research-agents">
         <div class="chapter-copy">
           <p class="chapter-bridge">The next question brings us back to Keysight and the whole workflow.</p>
-          <h3>Keysight · LLM Agent Workflow</h3>
+          <h3>Keysight · Agentic Workflow</h3>
           <p class="chapter-question">Can we coordinate the entire design loop?</p>
-          <ul><li><strong>Gap.</strong> Faster predictions still leave decisions about what to test, when to verify, and how to track the results.</li><li><strong>Next step.</strong> Explore an agent that coordinates evaluation, optimization, and validation and tracks decisions across the workflow.</li></ul>
+          <ul><li><strong>Gap.</strong> Faster predictions still leave decisions about what to test, when to verify, and how to track the results.</li><li><strong>Next step.</strong> Explore how an LLM agent could use each result to choose the next evaluation and track the evidence behind that choice.</li></ul>
         </div>
         <figure class="chapter-figure">
-          <ol class="method-diagram" aria-label="A proposed agent workflow coordinates evaluation, optimization and validation">
+          <ol class="method-diagram" aria-label="A proposed agentic workflow coordinates evaluation, optimization and validation">
             <li>Evaluate</li><li>Optimize</li><li>Validate</li>
           </ol>
           <figcaption>Proposed workflow · Track each decision and its evidence across the loop.</figcaption>

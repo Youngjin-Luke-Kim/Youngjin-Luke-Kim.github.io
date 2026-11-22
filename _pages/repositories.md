@@ -83,6 +83,7 @@ nav_order: 4
           <li>Develop meta-learning systems for automatic model scaling and connectivity optimization across GNN, FNO, and Transformer architectures</li>
           <li>Build frameworks for autonomous model discovery, enabling neural networks to self-optimize topology based on real-time training feedback</li>
         </ul>
+        <a href="{{ '/projects/' | relative_url }}#research-ml">ML prediction research</a>
       </div>
     </div>
   </div>
@@ -101,6 +102,7 @@ nav_order: 4
         <ul>
           <li>Research on EDA for 2.5D/3D IC design and machine learning for EDA (Advisor: Prof. Sungkyu Lim)</li>
         </ul>
+        <a href="{{ '/publications/' | relative_url }}#openeye2026">OpenEYE</a> · <a href="{{ '/publications/' | relative_url }}#disco2027">DiSCO</a>
       </div>
     </div>
   </div>
@@ -145,7 +147,7 @@ nav_order: 4
   </div>
 </div>
 
-<div class="card mt-3">
+<div class="card mt-3" id="photonic-weight-banks">
   <div class="p-3">
     <div class="row">
       <div class="col-sm-2">
@@ -158,6 +160,7 @@ nav_order: 4
         <ul>
           <li>Developed FPGA-based digital control systems and thermal crosstalk algorithms for Silicon Micro Ring Modulators (Advisor: Prof. Woo-Young Choi)</li>
         </ul>
+        <a href="{{ '/publications/' | relative_url }}#kim2024thermal">Photonic weight banks paper</a>
       </div>
     </div>
   </div>

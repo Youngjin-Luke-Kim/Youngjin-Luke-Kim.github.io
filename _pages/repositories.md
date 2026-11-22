@@ -54,9 +54,30 @@ nav_order: 4
         <img src="/assets/img/KS_LOGO.png" class="img-fluid" alt="Keysight Technologies">
       </div>
       <div class="col-sm-10">
+        <h5 class="font-weight-bold">PhD Intern, Agentic AI (Modeling Agent)</h5>
+        <h6 class="font-italic">Keysight Technologies</h6>
+        <h6 class="font-italic text-muted">Incoming · Starting Spring 2027</h6>
+        <ul>
+          <li>Will develop an LLM agent that examines an engineering dataset and proposes how to prepare the data, train a model, and optimize a design.</li>
+          <li>Will connect the agent to simulation and optimization tools so engineers can inspect its choices, revise a configuration, and reproduce a run.</li>
+          <li>Will benchmark the agent against expert-configured workflows, measuring task completion and model quality under a compute budget.</li>
+        </ul>
+        <a href="{{ '/projects/' | relative_url }}#research-agents">Agentic workflow research</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-2">
+        <img src="/assets/img/KS_LOGO.png" class="img-fluid" alt="Keysight Technologies">
+      </div>
+      <div class="col-sm-10">
         <h5 class="font-weight-bold">PhD Intern, Machine Learning Architecture Systems</h5>
         <h6 class="font-italic">Keysight Technologies, Calabasas, CA</h6>
-        <h6 class="font-italic text-muted">Summer 2026</h6>
+        <h6 class="font-italic text-muted">Summer and Fall 2026</h6>
         <ul>
           <li>Design and implement algorithms for autonomous neural architecture creation and model expansion using C++, CUDA, and libtorch</li>
           <li>Develop meta-learning systems for automatic model scaling and connectivity optimization across GNN, FNO, and Transformer architectures</li>
